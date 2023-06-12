@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE Solar-System 
+[
+    <!ELEMENT Solar-System (Star , Planets*)>
+    <!ELEMENT Star (name , size, distance, civilization, temperature)>
+    <!ELEMENT Planets (name, size , distance , civilization, order, temperature? , atmosphere? , planet-type?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT size (#PCDATA)>
+    <!ELEMENT distance (#PCDATA)>
+    <!ELEMENT civilization (#PCDATA)>
+    <!ELEMENT order (#PCDATA)>
+    <!ELEMENT temperature (#PCDATA)>
+    <!ELEMENT atmosphere (#PCDATA)>
+    <!ELEMENT planet-type (#PCDATA)>
+    <!ATTLIST Star class ID #REQUIRED>
+]>
+<Solar-System>
+    
+    <Star class="mini">
+        <name>Sun</name>
+        <size>302 times jupiter</size>
+        <distance>8.92 light minutes</distance>
+        <civilization>None</civilization>
+        <temperature>5000 Kelvin</temperature>
+    </Star>
+    <Planets>
+        <name>Mercury</name>
+        <size>.5 times of our moon</size>
+        <distance>8 light minutes</distance>
+        <civilization>none</civilization>
+        <order>1st Planet</order>
+    </Planets>
+    <Planets>
+        <name>Venus</name>
+        <size>.9 times of earth</size>
+        <distance>6 light minutes</distance>
+        <civilization>none</civilization>
+        <order>Second Planet</order>
+        <temperature>3500 Kelvin</temperature>
+    </Planets>
+    <Planets>
+        <name>Earth</name>
+        <size>696560 km</size>
+        <distance>we live here</distance>
+        <civilization>many</civilization>
+        <order>3rd Planet</order>
+    </Planets>
+    <Planets>
+        <name>Mars</name>
+        <size>.8 times of earth</size>
+        <distance>4.5 light minutes</distance>
+        <civilization>none</civilization>
+        <order>4th Planet</order>
+        <atmosphere>Rough</atmosphere>
+    </Planets>
+    <Planets>
+        <name>Jupiter</name>
+        <size>12000 times of earth</size>
+        <distance>10 light minutes</distance>
+        <civilization>none</civilization>
+        <order>5th Planet</order>
+        <atmosphere>Gassy</atmosphere>
+    </Planets>
+    <Planets>
+        <name>Saturn</name>
+        <size>500 times of earth</size>
+        <distance>16 light minutes</distance>
+        <civilization>none</civilization>
+        <order>6th Planet</order>
+        <atmosphere>gassy</atmosphere>
+        <planet-type>Ring Sized</planet-type>
+    </Planets>
+    <Planets>
+        <name>Neptune</name>
+        <size>560 times of earth</size>
+        <distance>22 light minutes</distance>
+        <civilization>none</civilization>
+        <order>7th Planet</order>
+        <planet-type>Blue Giants</planet-type>
+    </Planets>
+    <Planets>
+        <name>Uranus</name>
+        <size>550 times of earth</size>
+        <distance>26 light minutes</distance>
+        <civilization>none</civilization>
+        <order>8th Planet</order>
+        <atmosphere>Gassy</atmosphere>
+    </Planets>
+ 
+    
+</Solar-System>
